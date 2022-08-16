@@ -99,7 +99,7 @@ $url = "https://raw.githubusercontent.com/MSUSSolutionAccelerators/Overdose-Prev
 
     When prompted for a resource group, select the resource group you created in the first step.
 
-      [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/<URL_ENCODED_STRING_TO_DOTNETAPP_JSON>)
+      [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjbarnes1%2FOverdose-Prevention-Solution-Accelerator%2Fmain%2FdotnetApp.json)
 
     Note - Whenever the .bicep files are modified, the main.json file needs to be updated by running: 
     
