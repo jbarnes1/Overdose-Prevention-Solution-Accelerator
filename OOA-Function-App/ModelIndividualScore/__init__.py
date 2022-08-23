@@ -22,7 +22,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     # Parameters/Configurations
     abs_acct_name='ooadsq2cm4bix6n6fo'
     abs_acct_url=f'https://{abs_acct_name}.blob.core.windows.net/'
-    abs_container_name='funcappdata'
+    abs_container_name='<INSERT Container Name>'
 
     try:
         # Access Credential Via Key Vault
@@ -46,9 +46,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         
         # Input Connection String Manually
         except:
-            connection_string = 'DefaultEndpointsProtocol=https;AccountName=ooadsq2cm4bix6n6fo;AccountKey=gWGuMmpXi84jELir9kQ+TlOP73ZFnxg3ByCV4LwU7WNChTxTvi6EQO1JjY81i1rLakBCfnqOVTf/+AStuAEXYA==;EndpointSuffix=core.windows.net'
+            connection_string = '<INSERT STORAGE CONNECTION STRING>'
             blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-            abs_container_client = blob_service_client.get_container_client('funcappdata')
+            abs_container_client = blob_service_client.get_container_client('INSERT CONTAINER NAME')
 
     except Exception as e:
         logging.info(e)
